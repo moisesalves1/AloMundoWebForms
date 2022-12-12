@@ -16,9 +16,9 @@ namespace AloMundo
 
         protected void btExecutar_Click(object sender, EventArgs e)
         {
-            if (txtMsg.Text == "")
+            if (txtMsg.Text != "")
             {
-                lMsg.Text = "Alô Mundo - Aula 1";
+                lMsg.Text = "Alô " + txtMsg.Text + "!!!!!";
             } else
             {
                 lMsg.Text = txtMsg.Text;
